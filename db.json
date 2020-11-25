@@ -1,0 +1,66 @@
+{
+	"tickets": [
+		{ 
+			"id": 1, 
+			"data": "Single fare ticket",
+			"zone": "A"
+		},
+		{
+			"id": 2,
+			"data": "Short-trip ticket",
+			"zone": "A"
+		},
+		{
+			"id": 3,
+			"data": "4-trip tickets",
+			"zone": "A"
+		},
+		{
+			"id": 4,
+			"data": "Day ticket",
+			"zone": "A"
+		},
+		{
+			"id": 5,
+			"data": "7-day ticket",
+			"zone": "AB"
+		},
+		{
+			"id": 6,
+			"data": "Monthly ticket",
+			"zone": "AB"
+		},
+		{
+			"id": 7,
+			"data": "Student monthly ticket",
+			"zone": "A"
+		},
+		{
+			"id": 8,
+			"data": "Bicycle ticket",
+			"zone": "A"
+		},
+		{
+			"id": 9,
+			"data": "Tourist ticket",
+			"zone": "A"
+		},
+		{
+			"id": 10,
+			"data": "Berlin-Ticket S",
+			"zone": "A"
+		}
+	],
+	"questions": [
+		{
+			"id": 1, 
+			"data": "How much time are you planning on staying in the city?", 
+			"answers": [
+				{
+					"id": 1,
+					"data": ""
+				}
+			]
+		}
+	]
+}
