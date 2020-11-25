@@ -2,65 +2,161 @@
 	"tickets": [
 		{ 
 			"id": 1, 
-			"data": "Single fare ticket",
-			"zone": "A"
+			"name": "Single fare ticket",
+			"options": [
+				{
+					"validity": "2h",
+					"price": "2,90",
+					"zone": "AB"
+				},
+				{
+					"validity": "2h",
+					"price": "3,30",
+					"zone": "BC"
+				},
+				{
+					"validity": "2h",
+					"price": "3,60",
+					"zone": "ABC"
+				}
+			]
 		},
 		{
 			"id": 2,
-			"data": "Short-trip ticket",
-			"zone": "A"
+			"name": "Short-trip ticket",
+			"options": [
+				{
+					"validity": "2h",
+					"price": "9,00",
+					"zone": "AB"
+				},
+				{
+					"validity": "2h",
+					"price": "12,00",
+					"zone": "BC"
+				},
+				{
+					"validity": "2h",
+					"price": "13,20",
+					"zone": "ABC"
+				}
+			]
 		},
 		{
 			"id": 3,
-			"data": "4-trip tickets",
-			"zone": "A"
+			"name": "4-trip ticket",
+			"options": [
+				{
+					"validity": "2h",
+					"price": "9,00",
+					"zone": "AB"
+				},
+				{
+					"validity": "2h",
+					"price": "12,00",
+					"zone": "BC"
+				},
+				{
+					"validity": "2h",
+					"price": "13,20",
+					"zone": "ABC"
+				}
+			]
 		},
 		{
 			"id": 4,
-			"data": "Day ticket",
-			"zone": "A"
+			"name": "Day ticket",
+			"zones": ["AB", "BC", "ABC"]
 		},
 		{
 			"id": 5,
-			"data": "7-day ticket",
-			"zone": "AB"
+			"name": "7-day ticket",
+			"zones": ["AB", "BC", "ABC"]
 		},
 		{
 			"id": 6,
-			"data": "Monthly ticket",
-			"zone": "AB"
+			"name": "Monthly ticket",
+			"zones": ["AB", "BC", "ABC"]
 		},
 		{
 			"id": 7,
-			"data": "Student monthly ticket",
-			"zone": "A"
+			"name": "Student monthly ticket",
+			"zones": ["AB", "BC", "ABC"]
 		},
 		{
 			"id": 8,
-			"data": "Bicycle ticket",
-			"zone": "A"
+			"name": "Bicycle ticket",
+			"zones": ["AB", "BC", "ABC"]
 		},
 		{
 			"id": 9,
-			"data": "Tourist ticket",
-			"zone": "A"
+			"name": "Tourist ticket",
+			"options": [
+				{
+					"validity": "2d",
+					"price": "23,00",
+					"zone": "AB"
+				},
+				{
+					"validity": "2d",
+					"price": "28,00",
+					"zone": "ABC"
+				},
+				{
+					"validity": "3d",
+					"price": "33,00",
+					"zone": "AB"
+				},
+				{
+					"validity": "3d",
+					"price": "38,00",
+					"zone": "ABC"
+				},
+				{
+					"validity": "4d",
+					"price": "40,00",
+					"zone": "AB"
+				},
+				{
+					"validity": "4d",
+					"price": "45,00",
+					"zone": "ABC"
+				},
+				{
+					"validity": "5d",
+					"price": "46,00",
+					"zone": "AB"
+				},
+				{
+					"validity": "5d",
+					"price": "49,00",
+					"zone": "ABC"
+				},
+				{
+					"validity": "6d",
+					"price": "49,00",
+					"zone": "AB"
+				},
+				{
+					"validity": "6d",
+					"price": "52,00",
+					"zone": "ABC"
+				}
+			]
 		},
 		{
 			"id": 10,
-			"data": "Berlin-Ticket S",
-			"zone": "A"
+			"name": "Berlin-Ticket S",
+			"zones": ["AB", "BC", "ABC"]
 		}
 	],
 	"questions": [
 		{
 			"id": 1, 
 			"data": "How much time are you planning on staying in the city?", 
-			"answers": [
-				{
-					"id": 1,
-					"data": ""
-				}
-			]
+			"answer": {
+				"type": "number"
+			}
 		}
 	]
 }
