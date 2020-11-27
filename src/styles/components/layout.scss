@@ -1,0 +1,68 @@
+.layout {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20%;
+
+  @include lg {
+    max-width: 960px;
+    height: 80vh;
+    padding: 0;
+    margin: 0px auto;
+    border-radius: 16px;
+    background-image: linear-gradient(to bottom, #fff, rgba(255,255,255,0.8));
+    justify-content: center;
+  }
+
+  &__train {
+    background-image: url('../../images/train.svg');
+    width: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 10vh;
+    background-size: cover;
+    bottom: 4px;
+    animation: 10s trainAnimation infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+    @include lg {
+      height: 25vh;
+    }
+  }
+}
+
+@keyframes trainAnimation {
+  0%{
+    background-position: 120vw 0vw;
+  }
+
+  20% {
+    background-position: 25vw 0vw;
+  }
+
+  70% {
+    background-position: 25vw 0vw;
+  }
+
+  100% {
+    background-position: -350vw 0vw;
+  }
+}
+
+
+// @keyframes trainAnimation {
+//   0%{
+//     background-position: -200% 100%;
+//   }
+
+//   20% {
+//     background-position: -30% 100%;
+//   }
+
+//   70% {
+//     background-position: -30% 100%;
+//   }
+
+//   100% {
+//     background-position: 320% 100%;
+//   }
+// }

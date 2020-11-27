@@ -1,0 +1,12 @@
+.ticket {
+  background-color: $primary;
+  text-align: center;
+  padding: 1rem;
+  color: $white;
+  a {
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: .85em;
+  }
+}
